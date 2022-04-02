@@ -1,0 +1,6 @@
+.responsive-paddings {
+  padding: 10px 15px 15px;
+  .screen-large & {
+    padding: 0px 30px 30px;
+  }
+}
