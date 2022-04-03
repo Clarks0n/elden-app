@@ -15,6 +15,9 @@ const DataGridCm = ({dataSource}) => {
     })
   };
 
+  // const customizeValueText = (e) => {
+  //   return e.valueText.replaceAll("<br />","\n");
+  // };
 
   const onRowUpdating = (e) => {
     const oldData = e.oldData;
@@ -32,13 +35,16 @@ const DataGridCm = ({dataSource}) => {
         showBorders={true}
         rowAlternationEnabled={true}
         onRowUpdating={onRowUpdating}
+        // columnAutoWidth={true}
+        columnHidingEnabled={false}
+        wordWrapEnabled={true}
     >
       <Editing
         mode="batch"
         allowUpdating={true}
       />
       <LoadPanel enabled={true} />
-      <Paging defaultPageSize={10} />
+      <Paging defaultPageSize={30} />
       <Pager showPageSizeSelector={true} showInfo={true} />
       <FilterRow visible={true} />
       {columnArr.map((item,i) => {
@@ -46,7 +52,10 @@ const DataGridCm = ({dataSource}) => {
           item === 'done' ?
           <Column key={i} dataField={item} allowEditing={true} />
           :
-          <Column key={i} dataField={item} allowEditing={false} />
+          <Column key={i} dataField={item} allowEditing={false} 
+            encodeHtml={false}
+            // customizeText={customizeValueText}
+          />
         )
       })}
     </DataGrid>

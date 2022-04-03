@@ -1,17 +1,15 @@
 import React, { useEffect } from 'react';
 import Card from '../../components/card/Card';
 import DataGridCm from '../../components/data-grid/DataGrid';
-// import { data } from '../../data/NightCavalry';
 import { useSelector, useDispatch } from 'react-redux';
 import LoadPanel from 'devextreme-react/load-panel';
-import { getData } from '../../store/actions/NightCavalry';
-// import { data } from '../../data/NightCavalry';
+import { getData } from '../../store/actions/BellHunter';
 
-const NightCavalry = () => {
+const BellHunter = () => {
     const dispatch = useDispatch();
 
     const [dataSource] = useSelector((state) => [
-        state.nightCavalry.dataSource
+        state.bellHunter.dataSource
     ]);
 
     useEffect(() => {
@@ -22,7 +20,7 @@ const NightCavalry = () => {
 
     if(dataSource.length !== 0)
     return (
-        <Card title="Night Cavalry">
+        <Card title="Bell Hunter">
             <h5>Combat Information (only appear at night)</h5>
             <div className="flex-container">
                 <div className="flex-item-left">
@@ -65,4 +63,4 @@ const NightCavalry = () => {
     )
 }
 
-export default NightCavalry;
+export default BellHunter;

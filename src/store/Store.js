@@ -3,8 +3,8 @@ import { configureStore } from "@reduxjs/toolkit";
 
 // import persist
 import {combineReducers} from 'redux';
-// import storage from 'redux-persist/lib/storage'; // if using web
-import AsyncStorage from '@react-native-async-storage/async-storage'; // if using react native
+// import storage from 'redux-persist/lib/storage'; // if using web --- default to local storage if web
+import AsyncStorage from '@react-native-async-storage/async-storage'; // if using react native --- default to local storage if web
 import {
   FLUSH,
   PAUSE,
@@ -18,9 +18,27 @@ import {
 
 // import reducer
 import NightCavalryReducer from "./actions/NightCavalry";
+import DeathBirdReducer from "./actions/DeathBird";
+import BellHunterReducer from './actions/BellHunter';
+import BellBearingReducer from './actions/BellBearing';
+import CrystalTearReducer from './actions/CrystalTear';
+import WhetBladeReducer from './actions/WhetBlade';
+import PaintingReducer from "./actions/Painting";
+import SeedbedReducer from "./actions/SeedbedCurse";
+import AshesOfWarReducer from './actions/AshesOfWar';
+import MagicReducer from './actions/Magic';
 
 const rootReducer = combineReducers({
   nightCavalry: NightCavalryReducer,
+  deathBird: DeathBirdReducer,
+  bellHunter: BellHunterReducer,
+  bellBearing: BellBearingReducer,
+  crystalTear: CrystalTearReducer,
+  whetBlade: WhetBladeReducer,
+  painting: PaintingReducer,
+  seedbed: SeedbedReducer,
+  ashesOfWar: AshesOfWarReducer,
+  magic: MagicReducer
 });
 
 // persist config obj

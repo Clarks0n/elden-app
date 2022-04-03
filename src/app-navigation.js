@@ -1,8 +1,18 @@
 export const navigation = [
   {
-    text: 'Home',
+    text: 'Side Quest',
     path: '/',
     icon: 'home'
+  },
+  {
+    text: 'Ashes of war',
+    path: '/ashes-of-war',
+    icon: 'folder'
+  },
+  {
+    text: 'Magic',
+    path: '/magic',
+    icon: 'folder'
   },
   {
     text: 'Field Boss',
@@ -15,7 +25,41 @@ export const navigation = [
       {
         text: 'Death Bird',
         path: '/death-bird'
+      },
+      {
+        text: 'Bell Hunter',
+        path: '/bell-hunter'
+      }
+    ]
+  },
+  {
+    text: 'Misc Item',
+    icon: 'folder',
+    items: [
+      {
+        text: 'Bell Bearing',
+        path: '/bell-bearing'
+      },
+      {
+        text: 'Crystal Tear',
+        path: '/crystal-tear'
+      },
+      {
+        text: 'Whetblade',
+        path: '/whetblade'
+      },
+      {
+        text: 'Cookbook',
+        path: '/cookbook'
+      },
+      {
+        text: 'Painting',
+        path: '/painting'
+      },
+      {
+        text: 'Seedbed Curse',
+        path: '/seedbed-curse'
       }
     ]
   }
-  ];
+];

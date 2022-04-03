@@ -1,25 +1,23 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { data } from '../../data/NightCavalry';
+import { data } from '../../data/AshesOfWar';
 
 const initialStateValue = { 
     dataSource: data
 };
 
-export const nightCavalrySlice = createSlice({
-    name: 'nightCavalry',
+export const ashesOfWarSlice = createSlice({
+    name: 'ashesOfWar',
     initialState: initialStateValue,
     reducers: {
         getData: (state) => {
-            // state.dataSource = data;
             // eslint-disable-next-line no-self-assign
             state.dataSource = state.dataSource;
-           
         },
         updateData: (state,action) => {
             let dataSource = state.dataSource;
             let payload = action.payload;
             let payloadArr = [];
-            payloadArr.push(payload)
+            payloadArr.push(payload);
 
             let newData = dataSource.map(
                 obj => payloadArr.find(
@@ -37,9 +35,9 @@ export const nightCavalrySlice = createSlice({
     }
 });
 
-export const { getData, resetData, updateData } = nightCavalrySlice.actions;
+export const { getData, resetData, updateData } = ashesOfWarSlice.actions;
 
-export default nightCavalrySlice.reducer;
+export default ashesOfWarSlice.reducer;
 
 
 /*

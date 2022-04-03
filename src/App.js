@@ -1,6 +1,7 @@
 import 'devextreme/dist/css/dx.common.css';
 import './themes/generated/theme.base.css';
 import './themes/generated/theme.additional.css';
+// import AsyncStorage from '@react-native-async-storage/async-storage';
 import React from 'react';
 import { BrowserRouter  as Router, Routes, Route  } from 'react-router-dom';
 import './dx-styles.scss';
@@ -27,6 +28,20 @@ function App() {
 
   // return <UnauthenticatedContent />;
 
+  /* Clearing the async storage
+  const clearAsyncStorage  = async() => {
+    console.log("AA")
+    AsyncStorage.clear();
+  };
+
+  useEffect(() => {
+  
+    return () => {
+      clearAsyncStorage();
+    }
+  }, []);
+  */
+  
   return (
     <SideNavBarLayout title="Elden Ring">
       <Routes>

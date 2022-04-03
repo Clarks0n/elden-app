@@ -63,6 +63,4 @@ export const data = [
         done: false
     },
 
-
-
-]
+];
