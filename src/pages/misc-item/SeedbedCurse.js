@@ -23,6 +23,7 @@ const SeedbedCurse = () => {
         <Card title="Seedbed curse">
             <DataGridCm 
                 dataSource={dataSource}
+                dataName="SeedbedCurse"
             />
         </Card>
     )

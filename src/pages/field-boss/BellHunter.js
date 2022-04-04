@@ -55,6 +55,7 @@ const BellHunter = () => {
 
             <DataGridCm 
                 dataSource={dataSource}
+                dataName="BellHunter"
             />
         </Card>
     )

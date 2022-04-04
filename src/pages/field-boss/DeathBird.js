@@ -56,6 +56,7 @@ const DeathBird = () => {
 
             <DataGridCm 
                 dataSource={dataSource}
+                dataName="DeathBird"
             />
         </Card>
     )

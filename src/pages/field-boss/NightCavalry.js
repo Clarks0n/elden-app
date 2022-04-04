@@ -57,6 +57,7 @@ const NightCavalry = () => {
 
             <DataGridCm 
                 dataSource={dataSource}
+                dataName="NightCavalry"
             />
         </Card>
     )

@@ -26,6 +26,7 @@ const BellBearing = () => {
         
             <DataGridCm 
                 dataSource={dataSource}
+                dataName="BellBearing"
             />
         </Card>
     )

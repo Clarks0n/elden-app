@@ -1,0 +1,6 @@
+{
+	"appId": "com.elden.app",
+	"appName": "elden-app",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}

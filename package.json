@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@capacitor/android": "^3.4.3",
+    "@capacitor/cli": "^3.4.3",
+    "@capacitor/core": "^3.4.3",
+    "@capacitor/ios": "^3.4.3",
     "@react-native-async-storage/async-storage": "^1.17.3",
     "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.16.3",

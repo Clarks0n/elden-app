@@ -23,6 +23,7 @@ const Painting = () => {
         <Card title="Artist's Painting">
             <DataGridCm 
                 dataSource={dataSource}
+                dataName="Painting"
             />
         </Card>
     )

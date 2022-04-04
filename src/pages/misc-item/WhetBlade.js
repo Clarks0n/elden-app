@@ -23,6 +23,7 @@ const WhetBlade = () => {
         <Card title="Crystal Tear">
             <DataGridCm 
                 dataSource={dataSource}
+                dataName="WhetBlade"
             />
         </Card>
     )
