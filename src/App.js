@@ -1,6 +1,8 @@
 import 'devextreme/dist/css/dx.common.css';
-import './themes/generated/theme.base.css';
-import './themes/generated/theme.additional.css';
+// import './themes/generated/theme.base.css';
+// import './themes/generated/theme.additional.css';
+import './themes/generated/dx.material.base.css';
+import './themes/generated/dx.material.additional.css';
 // import AsyncStorage from '@react-native-async-storage/async-storage';
 import React from 'react';
 import { BrowserRouter  as Router, Routes, Route  } from 'react-router-dom';

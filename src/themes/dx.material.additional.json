@@ -1,0 +1,19 @@
+{
+    "items": [
+        {
+            "key": "$base-accent",
+            "value": "rgba(156, 39, 176, 1)"
+        }
+    ],
+    "baseTheme": "material.orange.dark",
+    "assetsBasePath": "../../../node_modules/devextreme/dist/css/",
+    "outputColorScheme": "additional",
+    "makeSwatch": true,
+    "base": true,
+    "widgets": [
+        "NavBar",
+        "TreeView"
+    ],
+    "version": "21.2.6",
+    "removeExternalResources": false
+}

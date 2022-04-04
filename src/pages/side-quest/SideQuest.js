@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import Card from '../../components/card/Card';
 
 const SideQuest = () => {
   return (
-    <>
+    <Card title="Side Quest">
         <table className="table-responsive">
             <tbody>
                 <tr>
@@ -396,7 +397,7 @@ const SideQuest = () => {
                 </tr>
             </tbody>
         </table>
-    </>
+    </Card>
   )
 }
 
