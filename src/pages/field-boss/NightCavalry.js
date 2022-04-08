@@ -14,9 +14,12 @@ const NightCavalry = () => {
         state.nightCavalry.dataSource
     ]);
 
+    // var x = localStorage.getItem("persist:root");
+    // console.log(JSON.parse(x).nightCavalry)
+
     useEffect(() => {
         dispatch(getData());
-
+     
         // eslint-disable-next-line react-hooks/exhaustive-deps
     },[]);
 

@@ -9,6 +9,7 @@ import Painting from './pages/misc-item/Painting';
 import SeedbedCurse from './pages/misc-item/SeedbedCurse';
 import AshesOfWar from './pages/ashes-of-war/AshesOfWar';
 import Magic from './pages/magic/Magic';
+import SacredTear from './pages/misc-item/SacredTear';
 
 const routes = [
   {
@@ -55,6 +56,10 @@ const routes = [
     path: '/magic',
     component: <Magic />
   },
+  {
+    path: '/sacred-tear',
+    component: <SacredTear />
+  }
 ];
 
 export default routes;

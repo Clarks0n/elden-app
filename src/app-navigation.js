@@ -45,6 +45,14 @@ export const navigation = [
         path: '/crystal-tear'
       },
       {
+        text: 'Sacred Tear',
+        path: '/sacred-tear'
+      },
+      {
+        text: 'Talisman',
+        path: '/talisman'
+      },
+      {
         text: 'Whetblade',
         path: '/whetblade'
       },
@@ -59,7 +67,7 @@ export const navigation = [
       {
         text: 'Seedbed Curse',
         path: '/seedbed-curse'
-      }
+      },
     ]
   }
 ];

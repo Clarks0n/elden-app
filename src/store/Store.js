@@ -27,6 +27,7 @@ import PaintingReducer from "./actions/Painting";
 import SeedbedReducer from "./actions/SeedbedCurse";
 import AshesOfWarReducer from './actions/AshesOfWar';
 import MagicReducer from './actions/Magic';
+import SacredTearReducer from './actions/SacredTear';
 
 const rootReducer = combineReducers({
   nightCavalry: NightCavalryReducer,
@@ -38,7 +39,8 @@ const rootReducer = combineReducers({
   painting: PaintingReducer,
   seedbed: SeedbedReducer,
   ashesOfWar: AshesOfWarReducer,
-  magic: MagicReducer
+  magic: MagicReducer,
+  sacredTear: SacredTearReducer
 });
 
 // persist config obj
