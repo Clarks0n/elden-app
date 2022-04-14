@@ -65,6 +65,7 @@ const DataGridCm = ({dataSource, dataName}) => {
         break;
       case 'Whetblade':
         e.cancel = dispatch(updateWhetblade(data));
+        // eslint-disable-next-line no-fallthrough
       default:
         break;
     }

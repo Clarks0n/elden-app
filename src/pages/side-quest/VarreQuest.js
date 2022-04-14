@@ -1,6 +1,38 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from '../../components/card/Card';
+import DataGridManual from '../../components/data-grid/DataGridManual';
+import LoadPanel from 'devextreme-react/load-panel';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
+const VarreQuest = () => {
+    const [dataSource, setDataSource] = useState([]);
+
+    useEffect(() => {
+        AsyncStorage.getItem('objVarre').then((value) => {
+            setDataSource(JSON.parse(value));
+        });
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
+    if(dataSource.length !== 0)
+    return (
+        <Card title="Varre Side Quest">
+            <DataGridManual 
+                dataSource={dataSource}
+                dataName="objVarre"
+            />
+        </Card>
+    )
+     return (
+        <LoadPanel visible={true} />
+    )
+};
+
+
+export default VarreQuest;
+
+/*
 const SideQuest = () => {
   return (
     <Card title="Side Quest">
@@ -400,5 +432,6 @@ const SideQuest = () => {
     </Card>
   )
 }
+*/
 
-export default SideQuest
+// export default SideQuest;

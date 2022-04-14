@@ -15,8 +15,14 @@
 
     .dx-treeview {
       // ## Long text positioning
-      white-space: nowrap;
+      white-space: normal !important;
       // ##
+
+      // new addition
+      .dx-item-content.dx-treeview-item-content {
+        display: flex;
+      }
+      //
 
       // ## Icon width customization
       .dx-treeview-item {
@@ -25,7 +31,7 @@
 
         .dx-icon {
           width: $side-panel-min-width !important;
-          margin: 0 !important;
+          // margin: 0 !important;
         }
       }
       // ##

@@ -2,6 +2,7 @@ import Drawer from 'devextreme-react/drawer';
 import ScrollView from 'devextreme-react/scroll-view';
 import React, { useState, useCallback, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+// eslint-disable-next-line no-unused-vars
 import { Header, SideNavigationMenu, Footer } from '../../components';
 import './side-nav-outer-toolbar.scss';
 import { useScreenSize } from '../../utils/media-query';

@@ -1,7 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { data } from '../../data/SacredTear';
 
-console.log(data)
 const initialStateValue = { 
     dataSource: data
 };

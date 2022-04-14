@@ -3,7 +3,7 @@ import Toolbar, { Item } from 'devextreme-react/toolbar';
 import Button from 'devextreme-react/button';
 // import UserPanel from '../user-panel/user-panel';
 import './header.scss';
-import { Template } from 'devextreme-react/core/template';
+// import { Template } from 'devextreme-react/core/template';
 
 export default function Header({ menuToggleEnabled, title, toggleMenu }) {
   return (

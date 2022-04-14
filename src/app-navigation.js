@@ -1,6 +1,6 @@
 export const navigation = [
   {
-    text: 'Side Quest',
+    text: 'General',
     path: '/',
     icon: 'home'
   },
@@ -12,6 +12,11 @@ export const navigation = [
   {
     text: 'Magic',
     path: '/magic',
+    icon: 'folder'
+  },
+  {
+    text: 'Notable Weapon / Armor / Shield',
+    path: '/notable-armamemt',
     icon: 'folder'
   },
   {
@@ -67,6 +72,128 @@ export const navigation = [
       {
         text: 'Seedbed Curse',
         path: '/seedbed-curse'
+      },
+    ]
+  },
+   {
+    text: 'Side Quest',
+    icon: 'folder',
+    items: [
+      {
+        text: 'Varre Quest',
+        path: '/varre'
+      },
+      {
+        text: 'Boc',
+        path: '/boc'
+      },
+      {
+        text: 'Roderika',
+        path: '/roderika'
+      },
+      {
+        text: 'D - Hunter',
+        path: '/d-hunter'
+      },
+      {
+        text: 'Gurranq',
+        path: '/gurranq'
+      },
+      {
+        text: 'Thops',
+        path: '/thops'
+      },
+      {
+        text: 'Hyetta',
+        path: '/hyetta'
+      },
+      {
+        text: 'Kenneth',
+        path: '/kenneth'
+      },
+      {
+        text: 'Ranni',
+        path: '/ranni'
+      },
+      {
+        text: 'Alexander',
+        path: '/alexander'
+      },
+      {
+        text: 'Blaidd',
+        path: '/blaidd'
+      },
+      {
+        text: 'Fia',
+        path: '/fia'
+      },
+      {
+        text: 'Sellen',
+        path: '/sellen'
+      },
+      {
+        text: 'Gowry',
+        path: '/gowry'
+      },
+      {
+        text: 'Corhyn',
+        path: '/corhyn'
+      },
+      {
+        text: 'Nepheli',
+        path: '/nepheli'
+      },
+      {
+        text: 'Seluvis',
+        path: '/seluvis'
+      },
+      {
+        text: 'Yura',
+        path: '/yura'
+      },
+      {
+        text: 'Bernahl',
+        path: '/bernahl'
+      },
+      {
+        text: 'Patches',
+        path: '/patches'
+      },
+      {
+        text: 'Rya',
+        path: '/rya'
+      },
+      {
+        text: 'Dung Eater',
+        path: '/dung-eater'
+      },
+      {
+        text: 'Millicent',
+        path: '/millicent'
+      },
+      {
+        text: 'Boggart',
+        path: '/boggart'
+      },
+      {
+        text: 'Latenna',
+        path: '/latenna'
+      },
+      {
+        text: 'Ensha',
+        path: '/ensha'
+      },
+      {
+        text: 'Rogier',
+        path: '/rogier'
+      },
+      {
+        text: 'Diallos',
+        path: '/diallos'
+      },
+      {
+        text: 'Tanith',
+        path: '/tanith'
       },
     ]
   }

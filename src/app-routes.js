@@ -1,4 +1,4 @@
-import SideQuest from './pages/side-quest/SideQuest';
+import General from './pages/general/General';
 import NightCavalry from './pages/field-boss/NightCavalry';
 import DeathBird from './pages/field-boss/DeathBird';
 import BellHunter from './pages/field-boss/BellHunter';
@@ -10,11 +10,12 @@ import SeedbedCurse from './pages/misc-item/SeedbedCurse';
 import AshesOfWar from './pages/ashes-of-war/AshesOfWar';
 import Magic from './pages/magic/Magic';
 import SacredTear from './pages/misc-item/SacredTear';
+import NotableArma from './pages/notable-armamemt/NotableArma';
 
 const routes = [
   {
     path: '/',
-    component: <SideQuest />
+    component: <General />
   },
   {
     path: '/night-cavalry',
@@ -59,6 +60,10 @@ const routes = [
   {
     path: '/sacred-tear',
     component: <SacredTear />
+  },
+  {
+    path: '/notable-armament',
+    component: <NotableArma />
   }
 ];
 
