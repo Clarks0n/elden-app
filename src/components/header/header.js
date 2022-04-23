@@ -4,8 +4,18 @@ import Button from 'devextreme-react/button';
 // import UserPanel from '../user-panel/user-panel';
 import './header.scss';
 // import { Template } from 'devextreme-react/core/template';
+import notify from 'devextreme/ui/notify';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
+const clearAsyncStorage  = async() => {
+  AsyncStorage.clear();
+
+  notify('Data Cleared', 'success', 2500)
+};
 
 export default function Header({ menuToggleEnabled, title, toggleMenu }) {
+
+
   return (
     <header className={'header-component'}>
       <Toolbar className={'header-toolbar'}>
@@ -23,6 +33,19 @@ export default function Header({ menuToggleEnabled, title, toggleMenu }) {
           text={title}
           visible={!!title}
         />
+
+        <Item
+          location={'after'}
+          cssClass={'header-title'}
+        >
+          <Button 
+            onClick={clearAsyncStorage}
+            height={'100%'}
+            stylingMode={'text'}
+          >
+            Clear Data
+          </Button>
+        </Item>
         {/* <Item
           location={'after'}
           locateInMenu={'auto'}
