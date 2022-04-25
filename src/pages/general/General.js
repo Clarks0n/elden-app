@@ -21,6 +21,22 @@ const General = () => {
         'Thops Barrier + medium shield:  13/9',
     ];
 
+    const equipLoad = [
+        `Light Load: 29.9% of your Max Equip Load and below (ong roll, quick backstep recovery. Increase in roll length is barely noticeable, as is increased backstep recovery speed. No difference in stamina recovery, animation, nor stamina usage from medium load)`,
+        `Medium Load: 30% to 69.9% of your Max Equip Load `,
+        `Heavy Load: 70% to 100% of your Max Equip Load (Slow and short rolls with next to no iframes. Very long backstep recovery. Stamina regen rate is also penalized by about 20%)`
+    ];
+
+    const statCap = [
+        `Vig : 40 / 60`,
+        `Min : 55 / 60`,
+        `End : 50(stam) 25 /60 (equip)`,
+        `Str : 20 / 55 / 80`,
+        `Dex : 20 / 55 / 80`,
+        `Int : 20 / 50 / 80 , 60 / 80 (Sorcery Scaling)`,
+        `Fai : 20 / 50 / 80 , 60 / 80 (Incantation Scaling)`,
+        `Arc : 20 / 50 / 80 , 30 / 45 (Incantation Scaling)`
+    ];
 
   return (
     <Card title="General Info">
@@ -60,6 +76,20 @@ const General = () => {
         <b>Start of Parry Frames / Active of parry frames</b>
         <ul>
             {parryFrame.map((item) => (
+                <li>{item}</li>
+            ))}
+        </ul>
+
+        <b>Equip Load </b>
+        <ul>
+            {equipLoad.map((item) => (
+                <li>{item}</li>
+            ))}
+        </ul>
+
+        <b>Stat Cap </b>
+        <ul>
+            {statCap.map((item) => (
                 <li>{item}</li>
             ))}
         </ul>
