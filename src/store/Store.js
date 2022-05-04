@@ -45,6 +45,7 @@ const rootReducer = combineReducers({
 
 // persist config obj
 // blacklist a store attribute using it's reducer name. Blacklisted attributes will not persist. (I did not find a way to blacklist specific values)
+
 const persistConfig = {
   key: 'root',
   version: 1,

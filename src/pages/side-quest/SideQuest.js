@@ -4,23 +4,22 @@ import DataGridManual from '../../components/data-grid/DataGridManual';
 import LoadPanel from 'devextreme-react/load-panel';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const VarreQuest = () => {
+const SideQuest = ({name}) => {
     const [dataSource, setDataSource] = useState([]);
 
     useEffect(() => {
-        AsyncStorage.getItem('objVarre').then((value) => {
+        AsyncStorage.getItem(`obj${name}`).then((value) => {
             setDataSource(JSON.parse(value));
         });
 
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+    }, [name]);
 
     if(dataSource.length !== 0)
     return (
-        <Card title="Varre Side Quest">
+        <Card title={`${name} Side Quest`}>
             <DataGridManual 
                 dataSource={dataSource}
-                dataName="objVarre"
+                dataName={`obj${name}`}
             />
         </Card>
     )
@@ -30,7 +29,7 @@ const VarreQuest = () => {
 };
 
 
-export default VarreQuest;
+export default SideQuest;
 
 /*
 const SideQuest = () => {

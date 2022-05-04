@@ -41,5 +41,3 @@ const obj = data.map((item, i) => {
         {id: i, name: item[0], location: item[1], done: false}
     )
 });
-
-console.log(obj)

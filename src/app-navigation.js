@@ -80,7 +80,7 @@ export const navigation = [
     icon: 'folder',
     items: [
       {
-        text: 'Varre Quest',
+        text: 'Varre',
         path: '/varre'
       },
       {

@@ -13,6 +13,10 @@ export const nightCavalrySlice = createSlice({
             // state.dataSource = data;
             // eslint-disable-next-line no-self-assign
             state.dataSource = state.dataSource;
+
+        //           let a = AsyncStorage.getItem(`persist:root`).then((val) => {
+        // console.log(JSON.parse(val).nightCavalry)
+    //   })
            
         },
         updateData: (state,action) => {

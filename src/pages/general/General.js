@@ -75,22 +75,22 @@ const General = () => {
 
         <b>Start of Parry Frames / Active of parry frames</b>
         <ul>
-            {parryFrame.map((item) => (
-                <li>{item}</li>
+            {parryFrame.map((item,i) => (
+                <li key={i}>{item}</li>
             ))}
         </ul>
 
         <b>Equip Load </b>
         <ul>
-            {equipLoad.map((item) => (
-                <li>{item}</li>
+            {equipLoad.map((item,i) => (
+                <li key={i}>{item}</li>
             ))}
         </ul>
 
         <b>Stat Cap </b>
         <ul>
-            {statCap.map((item) => (
-                <li>{item}</li>
+            {statCap.map((item,i) => (
+                <li key={i}>{item}</li>
             ))}
         </ul>
     </Card>
